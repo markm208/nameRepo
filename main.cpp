@@ -1,15 +1,16 @@
 #include <iostream>
 using namespace std;
 
-void printName();
+void printName(int year);
 
 int main()
 {
-    printName();
+    printName(2025);
     return 0;
 }
 //--
-void printName()
+void printName(int year)
 {
-    cout<<"Mark Mahoney"<<endl;
+    int age = year - 1973;
+    cout<<"Mark Mahoney ("<<age<<")"<<endl;
 }
